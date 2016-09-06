@@ -95,7 +95,30 @@ DeckCards.prototype.addOneFromBottom = function(card) {
 	this.deck.push(card);
 };
 
+var cardIndexInDeck = function(card){
+	if (card){
+	    return suit.indexOf(card.suit)*rank.length + card.rank;
+	}else {
+		return (-1);
+	}
+}
 
+DeckCards.prototype.sortCards = function(reverseOrder=0) {
+	this.deck.sort(function(a,b){
+		var indexInDeck_a = cardIndexInDeck(a);
+		var indexInDeck_b = cardIndexInDeck(b);
+		if (reverseOrder == 1){
+			return(indexInDeck_b - indexInDeck_a);
+		}else{
+			return(indexInDeck_a - indexInDeck_b);
+		}
+	});
+
+};
+//look at card at location index=cardLocation
+DeckCards.prototype.lookAtCard = function(cardLocation) {
+	return this.deck.slice(cardLocation,cardLocation+1);
+};
 
 //console.log(deck.join(','));
 
