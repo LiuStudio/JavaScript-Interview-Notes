@@ -1,0 +1,25 @@
+{
+  "name": "javascript-interview-notes",
+  "version": "1.0.0",
+  "description": "My notes for javascript interview",
+  "main": "Q1.js",
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "fs": "^0.0.1-security",
+    "io.js": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiuStudio/JavaScript-Interview-Notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiuStudio/JavaScript-Interview-Notes/issues"
+  },
+  "homepage": "https://github.com/LiuStudio/JavaScript-Interview-Notes#readme"
+}
