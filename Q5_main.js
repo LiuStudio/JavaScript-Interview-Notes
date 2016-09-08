@@ -32,7 +32,7 @@ deck1.insertMany(3,deck1topcard.concat(deck1bottomcard).concat(deck1middlecard))
 console.log("deck1, after insert(top,bottom,middle)card at before location = index = 3 is "+JSON.stringify(deck1));
 console.log("deck1, number of cards is "+deck1.deck.length);
 
-deck1.sortCards();
+deck1.sortCards(0);
 console.log("deck1, after sort is "+JSON.stringify(deck1));
 console.log("deck1, number of cards is "+deck1.deck.length);
 

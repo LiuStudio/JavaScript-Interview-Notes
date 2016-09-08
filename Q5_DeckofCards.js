@@ -103,7 +103,7 @@ var cardIndexInDeck = function(card){
 	}
 }
 
-DeckCards.prototype.sortCards = function(reverseOrder=0) {
+DeckCards.prototype.sortCards = function(reverseOrder) {
 	this.deck.sort(function(a,b){
 		var indexInDeck_a = cardIndexInDeck(a);
 		var indexInDeck_b = cardIndexInDeck(b);
